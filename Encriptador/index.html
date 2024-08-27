@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <img class="imagen__header" src="/assets/Logo.png" alt="">
+    </header>
+
+    <main class="presentacion">
+        <section class="presentacion__entrada">
+            <textarea class="texto__entrada" id="texto__entrada" rows="19" cols="50" placeholder="Ingrese el texto aquí"
+                autofocus></textarea><br>
+            <div>
+                <p class="texto__munusculas"> Solo letras minúsculas y sin acentos.</p>
+                <div class="botones">
+                    
+                    <button name="encriptar" class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button name="desencriptar" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="presentacion__salida">
+            <textarea class="texto__salida" id="texto__salida" rows="4" cols="23"></textarea><br>
+            
+            <div class="contenidos__textos" id="contenidos__textos">
+                <img class="imagen__buscar" id="imagen__buscar" src="/assets/Muñeco.png" alt="">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="copiar" name="copiar" class="copiar" onclick="copiarTexto()" style="display: none;">Copiar</button>                
+            </div>
+            <div>
+                <button id="copiar" name="copiar" class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desarrollado Eduardo Avellaneda</p>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+
+</html>

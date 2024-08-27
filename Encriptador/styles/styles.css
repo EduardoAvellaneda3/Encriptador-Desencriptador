@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #343A40;
+    --color-cuaternario: #495057;
+    --color-quinario: #FFFFFF;
+    --font-inter:"Inter", sans-serif;
+}
+    
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;  
+}
+
+
+.presentacion{
+    
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;   
+    display: flex;
+    gap: 100px;
+    
+}
+
+.imagen__header{
+    margin: 40px;
+}
+.presentacion__entrada{
+    margin-left: 300px;
+    margin-top: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto__entrada{
+    width: 600px;
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-secundario);
+    font-size: 32px;
+}
+.texto__entrada::placeholder{
+    color: var(--color-secundario);
+    font-size: 32px;
+}
+.texto__entrada:focus{
+    outline:  none;
+}
+
+.texto__munusculas{
+    font-family: var(--font-inter);
+    font-size: 16px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 24px;
+}
+.encriptar{
+    color: var(--color-primario);
+    font-family: var(--font-inter);
+    background: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    padding: 24px;
+}
+.desencriptar{
+    color: var(--color-secundario);
+    font-family: var(--font-inter);
+    background: var(--color-primario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    padding: 24px;
+}
+
+.presentacion__salida{
+    margin-left: 10px;
+    margin-top: -70px;
+    
+    
+}
+
+.texto__salida{
+    font-size: 32px;
+    font-family: var(--font-inter);
+    color: var(--color-quinario);
+    resize: none;
+    margin-left: 70px;
+    padding: 20px;
+    padding-bottom: 100px;
+    height: 900px;
+    color: var(--color-secundario);
+    background: var(--color-quinario);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+
+.contenidos__textos{
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -740px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+.texto1{
+    font-family: var(--font-inter);
+    
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+.texto2{
+    font-family: var(--font-inter);
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+
+
+.copiar{
+    display: none;
+    color: var(--color-secundario);
+    background: var(--color-primario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    padding: 24px;
+    margin-top: 623px;
+}
+
+footer{
+    margin: 24px;
+}
+
+    
